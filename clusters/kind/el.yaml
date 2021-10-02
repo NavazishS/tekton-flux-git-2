@@ -11,6 +11,6 @@ spec:
             filter: header.canonical('Gotk-Component') == 'source-controller' &&
               body.involvedObject.kind == 'GitRepository'
       template:
-        name: flux-notification-template
+        ref: flux-notification-template
       bindings:
         - ref: flux-notification-binding
